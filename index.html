@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arabam.com: 2. El ve 0 Km Satılık Araç İlanları Platformu</title>
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="/src/img/favicon-32x32.png"/>
+
+    <!-- Bootstarp integrity -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS integrity -->
+    <link rel="stylesheet" href="/style.css"/>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="myContainer">
+                <a><img class="img-inside-div" src="/src/img/content-indirim-desktop.png"/></a>
+            </div>
+        </div>
+
+        <!-- NavBar -->
+        <div class="navbar-container">
+            <nav class="navbar">
+
+                <!-- inside lists will append -->
+
+                <ul class="navbar-list">
+                    <li>Trink sat! <i class="fa-solid fa-caret-down"></i></li>
+                    <li>Araç Al <i class="fa-solid fa-caret-down"></i></li>
+                    <li>Araç Sat <i class="fa-solid fa-caret-down"></i></li>
+                    <li>Hizmetlerimiz <i class="fa-solid fa-caret-down"></i></li>
+                    <li>arabam Blog <i class="fa-solid fa-caret-down"></i></li>
+                    <li>Kurumsal <i class="fa-solid fa-caret-down"></i></li>
+                    <li>Garaj <i class="fa-solid fa-caret-down"></i></li>
+                    <li>Ekspertiz <i class="fa-solid fa-caret-down"></i></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- HeaderBar -->
+         <div class="headerbar-container">
+            <div class="headerbar">
+                <img src="/src/img/tek-tur-large.gif" width="207px" height="36px"/>
+                <div class="search-input-container">
+                    <div class="search-input-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="search-input" type="text" placeholder="Kelime, galeri adı veya ilan no ile ara"/>
+                    </div>
+                    <button id="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="buttons">
+                    <a href="#">Giriş Yap</a>
+                    <span>/</span>
+                    <a href="#">Üye Ol</a>
+                    <button id="advert-button">Ücretsiz İlan Ver <i class="fa-solid fa-caret-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-page-container">
+        <div class="myContainer">
+            <div class="first-section">
+                <div class="category-container">
+                    <div class="up-category">
+                        <a href="#">Son 24 Saat / 48 Saat</a>
+                        <a href="#">Acil İlanlar</a>
+                        <a href="#">Fiyatı Düşenler</a>
+                    </div>
+                    <div class="down-category">
+                        <a href="#">Tüm İlanlar</a>
+                        <a href="#">Otomobil</a>
+                        <a href="#">Arazi, SUV, Pick-up</a>
+                        <a href="#">Motosiklet</a>
+                        <a href="#">Minivan & Panelvan</a>
+                        <a href="#">Ticari Araçlar</a>
+                        <a href="#">Kiralık Araçlar</a>
+                        <a href="#">Hasarlı Araçlar</a>
+                        <a href="#">Traktör</a>
+                        <a href="#">Tarım & İş Makineleri</a>
+                        <a href="#">Klasik Araçlar</a>
+                        <a href="#">Elektrikli Araçlar</a>
+                        <a href="#">ATV & UTV</a>
+                        <a href="#">Karavan</a>
+                        <a href="#">Engelli Araçları</a>
+                        <a href="#">Modifiyeli Araçlar</a>
+                    </div>
+                </div>
+
+                <div class="advertisement-features-container">
+                    <div class="advertisement">
+                        <img id="adv-big-img" src="/src/img/399936003529579033.jpeg"/>
+                        <img id="adv-small-img" src="/src/img/anasayfa-tablet-bireysel.png"/>
+                    </div>
+                    <div class="features">
+                        <div class="feature-card">
+                            <img class="hide-mobile" src="/src/img/trink-sat.png" width="24px" height="24px"/>
+                            <div class="hdr">
+                                <p><strong>Trink Sat</strong></p>
+                                Aracını değerinde ve anında biz alıyoruz, <b>15 dakika içinde paran cebinde!</b>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <img class="hide-mobile" src="/src/img/how-much-my-car.png" width="24px" height="24px"/>
+                            <div class="hdr">
+                                <p> <strong>Arabam Kaç Para?</strong></p>
+                                Alan memnun, satan memnun <b>fiyatını öğren!</b>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <img class="hide-mobile" src="/src/img/zero-km.png" width="24px" height="24px"/>
+                            <div class="hdr">
+                                <p><strong>Sıfır Km Araçlar</strong></p>
+                                Sıfır km araç özelliklerini ve <b>fiyat listesini incele!</b>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <img class="hide-mobile" src="/src/img/suggest-vehicle.png" width="24px" height="24px"/>
+                            <div class="hdr">
+                                <p><strong>Bana Araç Öner</strong></p>
+                                Hangi aracı alacağına karar veremediysen, <b>biz sana önerelim!</b>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <img class="hide-mobile" src="/src/img/garage.png" width="24px" height="24px"/>
+                            <div class="hdr">
+                                <p><strong>Garaj</strong></p>
+                                Periyodik Bakım'dan Oto Kuaför'e kadar <b>aracın için her şey!</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="expertise">
+            <a href="#"><img class="img-inside-div" src="/src/img/expertise-home-location-bireysel.png" width="1216px" height="80px"/></a>
+        </div>
+
+        <div class="myContainer">
+            <div class="showcase">
+                <div class="featured-sellers">
+                    <h3>Öne Çıkan Satıcılar</h3>
+                    <div class="sellers-row">
+                        <a href="#">
+                            <div class="seller">
+                                <div class="seller-photo">
+                                    <img src="/src/img/favicon-32x32.png"/>
+                                </div>
+                                <div class="seller-name">
+                                    <span>ABC</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="seller">
+                                <div class="seller-photo">
+                                    <img src="/src/img/favicon-32x32.png"/>
+                                </div>
+                                <div class="seller-name">
+                                    <span>XYZ</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="seller">
+                                <div class="seller-photo">
+                                    <img src="/src/img/favicon-32x32.png"/>
+                                </div>
+                                <div class="seller-name">
+                                    <span>123</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="seller">
+                                <div class="seller-photo">
+                                    <img src="/src/img/favicon-32x32.png"/>
+                                </div>
+                                <div class="seller-name">
+                                    <span>KLM</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="seller">
+                                <div class="seller-photo">
+                                    <img src="/src/img/favicon-32x32.png"/>
+                                </div>
+                                <div class="seller-name">
+                                    <span>PRS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="seller">
+                                <div class="seller-photo">
+                                    <img src="/src/img/favicon-32x32.png"/>
+                                </div>
+                                <div class="seller-name">
+                                    <span>456</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="page-header">
+                    <h2>Vitrin
+                        <a href="#">Tüm Vitrini Gör</a>
+                    </h2>
+                </div>
+
+                <div class="sales-car-container">
+                    <div class="row">
+                        <div class="sale-car-card">
+                            <div class="vehicle-container">
+                                <div class="vehicle">
+                                    <a href="#">
+                                        <div class="vehicle-image">
+                                            <img src="./src/img/hyundai-i20n-160x120.jpg"/>
+                                        </div>
+                                        <div class="vehicle-info">
+                                            <div class="city-year">
+                                                <p class="model-city">İstanbul</p>
+                                                <p class="model-year">2024</p>
+                                            </div>
+                                            <div class="name">
+                                                <h4>Hyundai İ20N 1.6T-GDİ 204PS</h4>
+                                            </div>
+                                            <div class="price">
+                                                1.767.000 TL
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale-car-card">
+                            <div class="vehicle-container">
+                                <div class="vehicle-container">
+                                    <div class="vehicle">
+                                        <a href="#">
+                                            <div class="vehicle-image">
+                                                <img src="./src/img/mazda-mx-5-30th-160x120.jpg"/>
+                                            </div>
+                                            <div class="vehicle-info">
+                                                <div class="city-year">
+                                                    <p class="model-city">İstanbul</p>
+                                                    <p class="model-year">2019</p>
+                                                </div>
+                                                <div class="name">
+                                                    <h4>Mazda MX-5 2.0 30th Year Edition</h4>
+                                                </div>
+                                                <div class="price">
+                                                    4.095.000 TL
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale-car-card">
+                            <div class="vehicle-container">
+                                <div class="vehicle-container">
+                                    <div class="vehicle">
+                                        <a href="#">
+                                            <div class="vehicle-image">
+                                                <img src="./src/img/alfa-rome-giulia-160x120.jpg"/>
+                                            </div>
+                                            <div class="vehicle-info">
+                                                <div class="city-year">
+                                                    <p class="model-city">İstanbul</p>
+                                                    <p class="model-year">2023</p>
+                                                </div>
+                                                <div class="name">
+                                                    <h4>Alfa Romeo Giulia Q4 2.0T 280HP</h4>
+                                                </div>
+                                                <div class="price">
+                                                    3.565.000 TL
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale-car-card">
+                            <div class="vehicle-container">
+                                <div class="vehicle">
+                                    <a href="#">
+                                        <div class="vehicle-image">
+                                            <img src="./src/img/hyundai-i20n-160x120.jpg"/>
+                                        </div>
+                                        <div class="vehicle-info">
+                                            <div class="city-year">
+                                                <p class="model-city">İstanbul</p>
+                                                <p class="model-year">2024</p>
+                                            </div>
+                                            <div class="name">
+                                                <h4>Hyundai İ20N 1.6T-GDİ 204PS</h4>
+                                            </div>
+                                            <div class="price">
+                                                1.767.000 TL
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale-car-card">
+                            <div class="vehicle-container">
+                                <div class="vehicle-container">
+                                    <div class="vehicle">
+                                        <a href="#">
+                                            <div class="vehicle-image">
+                                                <img src="./src/img/mazda-mx-5-30th-160x120.jpg"/>
+                                            </div>
+                                            <div class="vehicle-info">
+                                                <div class="city-year">
+                                                    <p class="model-city">İstanbul</p>
+                                                    <p class="model-year">2019</p>
+                                                </div>
+                                                <div class="name">
+                                                    <h4>Mazda MX-5 2.0 30th Year Edition</h4>
+                                                </div>
+                                                <div class="price">
+                                                    4.095.000 TL
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sale-car-card">
+                            <div class="vehicle-container">
+                                <div class="vehicle-container">
+                                    <div class="vehicle">
+                                        <a href="#">
+                                            <div class="vehicle-image">
+                                                <img src="./src/img/alfa-rome-giulia-160x120.jpg"/>
+                                            </div>
+                                            <div class="vehicle-info">
+                                                <div class="city-year">
+                                                    <p class="model-city">İstanbul</p>
+                                                    <p class="model-year">2023</p>
+                                                </div>
+                                                <div class="name">
+                                                    <h4>Alfa Romeo Giulia Q4 2.0T 280HP</h4>
+                                                </div>
+                                                <div class="price">
+                                                    3.565.000 TL
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="myContainer">
+            <div class="row mb-4" id="row-wid">
+                <div class="widget-wrapper">
+                    <h3>arabam.com ile, İşini Bir Adım İleri Taşı!</h3>
+                    <div class="col-4 widget-row">
+                        <div class="widget-container">
+                            <div class="widget-card">
+                                <div class="widget-image">
+                                    <img src="./src/img/homepage_1.png"/>
+                                </div>
+                                <div class="widget-description">
+                                    <p>Sadece arabam.com'da Bulabileceğiniz Hizmetlerler işinize Değer Katalım</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-container">
+                            <div class="widget-card">
+                                <div class="widget-image">
+                                    <img src="./src/img/homepage_2.png"/>
+                                </div>
+                                <div class="widget-description">
+                                    <p>Ek Gelir ve Fayda Sağlayan Hizmetlerimizi Keşfedin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-container">
+                            <div class="widget-card">
+                                <div class="widget-image">
+                                    <img src="./src/img/homepage_new.png"/>
+                                </div>
+                                <div class="widget-description">
+                                    <p>arabam.com'u, Tercih Eden Üyelerimizden Dinleyin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" id="row-down">
+                <div class="col-6">
+                    <div class="down-wrap">
+                        <div class="down-title">
+                            <h2>Test Sürüşleri <hr/></h2>
+                        </div>
+                        <div class="down-container">
+                            <div class="big-article">
+                                <img src="./src/img/renault-megane-e-tech-1-1.jpg"/>
+                                <div class="big-content-container">
+                                    <h4>Renault Megane E-Tech Test Sürüşü</h4>
+                                    <p>Renault Megane E-Tech modelinin tüm detaylarını sizler için inceledik. Hazırsanız, bu heyecan verici aracı birlikte keşfetmeye başlayalım!</p>
+                                </div>
+                            </div>
+                            <div class="small-article">
+                                <div class="small-img-container">
+                                    <img src="./src/img/Yeni-Proje-6.jpg"/>
+                                </div>
+                                <div class="small-content-container">
+                                    <h5 class="text-truncate">Suzuki S-Cross Hybrid Test Sürüşü</h5>
+                                    <p class="text-truncate">Suzuki S-Cross Hybrid modelinin tüm detaylarını ve sürüş deneyimimizi merak ediyorsanız yazımızı okumaya başlayın!</p>
+                                </div>
+                            </div>
+                            <div class="small-article">
+                                <div class="small-img-container">
+                                    <img src="./src/img/mg-2.jpg" />
+                                </div>
+                                <div class="small-content-container">
+                                    <h5 class="text-truncate">MG ZS EV Test Sürüşü</h5>
+                                    <p class="text-truncate">Hem dış tasarımı hem de teknolojik anlamda gelişen, sınıfının ilk Euro NCAP’ten 5 yıldız alan ve tamamen elektrikli şehirli SUV’si MG ZS EV test sürüşünün bütün detaylarını sizler için inceledik. MG...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button>Tüm Sürüşler</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="down-wrap">
+                        <div class="down-title">
+                            <h2>Haberler <hr/></h2>
+                        </div>
+                        <div class="down-container">
+                            <div class="big-article">
+                                <img src="./src/img/arac-satisi-1.jpg"/>
+                                <div class="big-content-container">
+                                    <h4>İthal Otomobillere %10 Ek Gümrük Vergisi Geldi!</h4>
+                                    <p>Resmi Gazete’de yayımlanan düzenlemeyle ithal otomobillere %10 ek gümrük vergisi uygulanacak. Detaylar için tıklayın!</p>
+                                </div>
+                            </div>
+                            <div class="small-article">
+                                <div class="small-img-container">
+                                    <img src="./src/img/Citroen-C4-X.jpg"/>
+                                </div>
+                                <div class="small-content-container">
+                                    <h5 class="text-truncate">Citroen C4 X ile Sürüş Avantajlarının Keyfini Çıkarın!</h5>
+                                    <p class="text-truncate">Citroen C4 X ile ilgili aradığınız bütün detaylar burada! Modelin teknolojik donanımından dış tasarımına kadar ele aldığımız bu içeriğimize mutlaka göz atın!</p>
+                                </div>
+                            </div>
+                            <div class="small-article">
+                                <div class="small-img-container">
+                                    <img src="./src/img/Arac-satisi-2.jpg" />
+                                </div>
+                                <div class="small-content-container">
+                                    <h5 class="text-truncate">Aracınızı Satmadan Önce Yapmanız Gereken Bakımlar</h5>
+                                    <p class="text-truncate">Bu rehberde araç satış sürecinde yapmanız gereken adımları bulabilirsiniz.</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button>Tüm Haberler</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top-container">
+            <div class="myContainer">
+                <div class="footer-top">
+                    <div class="mobile-social-wrapper">
+                        <div class="mobile">
+                            <div class="item">
+                                <img src="./src/img/android.svg"/>
+                                <div class="text">
+                                    <span><b>Google Play'den</b> indirebilirsiniz.</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./src/img/ios.svg"/>
+                                <div class="text">
+                                    <span><b>App Store'dan</b> indirebilirsiniz.</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="./src/img/huawei.svg"/>
+                                <div class="text">
+                                    <span><b>App Gallery'den</b> indirebilirsiniz.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <img src="./src/img/facebook.svg"/>
+                            <img src="./src/img/x-twitter.svg"/>
+                            <img src="./src/img/youtube.svg"/>
+                            <img src="./src/img/instagram.svg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="myContainer">
+            <div class="footer-middle">
+                <div class="links-container">
+                    <div class="nav-links">
+                        <span>Kurumsal</span>
+                        <ul>
+                            <li>
+                                <a href="#">Hakkımızda</a>
+                            </li>
+                            <li>
+                                <a href="#">Üye Hikayeleri</a>
+                            </li>
+                            <li>
+                                <a href="#">Yardım / İşlem Rehberi</a>
+                            </li>
+                            <li>
+                                <a href="#">Gizlilik Politikası</a>
+                            </li>
+                            <li>
+                                <a href="#">Reklam Verin</a>
+                            </li>
+                            <li>
+                                <a href="#">İletişim</a>
+                            </li>
+                            <li>
+                                <a href="#">Ziyaretçi Aydınlatma Metni</a>
+                            </li>
+                            <li>
+                                <a href="#">Kişisel Verilerin Korunması Kanunu Hakkında Bilgilendirme</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Bootstrap Nav&Tabs Javascript Behavior-->
+                    <div class="tabs-container">
+                        <div class="nav nav-tabs" id="tabs" role="tablist">
+                            <button class="nav-link active" id="sale-car-tab" data-bs-toggle="tab" data-bs-target="#sale-car" type="button" role="tab" aria-controls="sale-car" aria-selected="true">Satılık Araba</button>
+                            <button class="nav-link" id="from-owners-tab" data-bs-toggle="tab" data-bs-target="#from-owners" type="button" role="tab" aria-controls="from-owners" aria-selected="false">Sahibinden</button>
+                            <button class="nav-link" id="city-tab" data-bs-toggle="tab" data-bs-target="#city" type="button" role="tab" aria-controls="city" aria-selected="false">Şehir</button>
+                            <button class="nav-link" id="zero-km-tab" data-bs-toggle="tab" data-bs-target="#zero-km" type="button" role="tab" aria-controls="zero-km" aria-selected="false">Sıfır KM</button>
+                            <button class="nav-link" id="garage-tab" data-bs-toggle="tab" data-bs-target="#garage" type="button" role="tab" aria-controls="garage" aria-selected="false">Garaj</button>
+                        </div>
+
+                        <div class="tab-content" id="tab-container">
+                            <div class="tab-pane show active" id="sale-car" role="tabpanel" aria-labelledby="sale-car-tab" tabindex="0">
+                                <div class="tab-contents">
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Satılık Alfa Romeo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="from-owners" role="tabpanel" aria-labelledby="from-owners-tab" tabindex="0">
+                                <div class="tab-contents">
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sahibinden Alfa Romeo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="city" role="tabpanel" aria-labelledby="city-tab" tabindex="0">
+                                <div class="tab-contents">
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">2.El Araba İstanbul</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="zero-km" role="tabpanel" aria-labelledby="zero-km-tab" tabindex="0">
+                                <div class="tab-contents">
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Sıfır KM Alfa Romeo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="garage" role="tabpanel" aria-labelledby="garage-tab" tabindex="0">
+                                <div class="tab-contents">
+                                    <div class="tab-content-item">
+                                        <a href="#">Garajı Keşfet</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Oto Kuaför</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Servis & Bakım</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Renault Bakım</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Opel Bakım</a>
+                                    </div>
+                                    <div class="tab-content-item">
+                                        <a href="#">Toyota Bakım</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="myContainer">
+            <div class="footer-cc">
+                <div class="services">
+                    <div class="call-center">
+                        <span>Müşteri Hizmetleri</span>
+                        <b>0 850 759 90 00</b>
+                    </div>
+                    <div class="copyright-etbis">
+                        <b><i class="fa-regular fa-copyright"></i> 2000-2024 arabam.com </b>
+                        <div class="etbis">
+                            <img src="./src/img/etbis-qr.jpeg" width="40px" height="47px"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end-container">
+            <div class="myContainer">
+                <div class="footer-end">
+                    <div class="holding">
+                        <span>arabam.com bir <img src="./src/img/ilab-new-logo.png" width="45px"/> grup şirketidir.</span>
+                        <ul>
+                            <li><a href="https://www.kariyer.net/"></a>Kariyer.net</li>
+                            <li><a href="https://isinolsun.com/"></a>İsinolsun.com</li>
+                            <li><a href="https://www.emlakjet.com/"></a>Emlakjet</li>
+                            <li><a href="https://www.sigortam.net/"></a>Sigortam.net</li>
+                            <li><a href="https://www.hangikredi.com/"></a>HangiKredi</li>
+                            <li><a href="https://www.neredekal.com/"></a>Neredekal.com</li>
+                            <li><a href="https://www.chemorbis.com/tr/"></a>ChemOrbis</li>
+                            <li><a href="https://www.cimri.com/"></a>Cimri.com</li>
+                            <li><a href="https://tr.steelorbis.com/"></a>SteelOrbis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
